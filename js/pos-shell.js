@@ -63,21 +63,15 @@
       '<div><b>Business types</b><a href="' + local("pos/industries/retail.html") + '">Retail</a><a href="' + local("pos/industries/restaurant.html") + '">Restaurant</a><a href="' + local("pos/industries/cafe.html") + '">Café</a><a href="' + local("pos/industries/mobile-shop.html") + '">Mobile shop</a><a href="' + local("pos/industries/supermarket.html") + '">Supermarket</a><a href="' + local("pos/industries/grocery.html") + '">Grocery</a></div>' +
       '<div><b>Puravigal</b><a href="' + local("") + '">Main website</a><a href="' + local("contact.html") + '">Talk to us</a><a href="' + local("privacy-policy.html") + '">Privacy Policy</a><a href="' + local("terms-and-conditions.html") + '">Terms &amp; Conditions</a></div>' +
       '<div class="social-footer"><b>Follow Puravigal</b><div class="social-links">' +
-        '<a href="#" data-social-placeholder="linkedin" aria-label="LinkedIn — replace placeholder URL" title="LinkedIn URL placeholder"><img src="' + local("images/icons/linkedin.svg") + '" alt=""></a>' +
+        '<a href="https://www.linkedin.com/company/puravigal-technologies/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/linkedin.svg") + '" alt=""></a>' +
+        '<a href="https://www.instagram.com/puravigal/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/instagram.svg") + '" alt=""></a>' +
         '<a href="https://www.facebook.com/puravigal" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/facebook.svg") + '" alt=""></a>' +
-        '<a href="https://instagram.com/puravigal/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/instagram.svg") + '" alt=""></a>' +
-        '<a href="https://twitter.com/puravigal" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/twitter.svg") + '" alt=""></a>' +
-        '<a href="https://www.threads.net/@puravigal" aria-label="Threads" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/threads.svg") + '" alt=""></a>' +
-        '<a href="#" data-social-placeholder="whatsapp" aria-label="WhatsApp — replace placeholder URL" title="WhatsApp URL placeholder"><img src="' + local("images/icons/whatsapp.svg") + '" alt=""></a>' +
-        '<a href="#" data-social-placeholder="youtube" aria-label="YouTube — replace placeholder URL" title="YouTube URL placeholder"><img src="' + local("images/icons/youtube.svg") + '" alt=""></a>' +
+        '<a href="https://x.com/puravigal" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/twitter.svg") + '" alt=""></a>' +
+        '<a href="https://www.threads.com/@puravigal" aria-label="Threads" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/threads.svg") + '" alt=""></a>' +
+        '<a href="https://www.reddit.com/u/Puravigal/" aria-label="Reddit" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/reddit.svg") + '" alt=""></a>' +
+        '<a href="https://youtube.com/@puravigal-technologies" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><img src="' + local("images/icons/youtube.svg") + '" alt=""></a>' +
       '</div></div>' +
     '</div><div class="container copyright">© 2026 Puravigal POS. Part of Puravigal.</div>';
-
-  footer.querySelectorAll("[data-social-placeholder]").forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-    });
-  });
 
   var headerMount = document.querySelector("[data-pos-header]");
   var footerMount = document.querySelector("[data-pos-footer]");
